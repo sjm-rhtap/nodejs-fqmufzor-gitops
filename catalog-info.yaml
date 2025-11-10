@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: nodejs-fqmufzor-gitops
+  description: This is GitOps manifest for nodejs-fqmufzor   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: tssc/gitops=nodejs-fqmufzor
+    backstage.io/kubernetes-id: nodejs-fqmufzor 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: nodejs-fqmufzor
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:nodejs-fqmufzor
