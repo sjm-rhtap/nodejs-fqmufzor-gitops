@@ -12,5 +12,5 @@ spec:
   template:
     spec:
       containers:
-        - image: quay.io/sjmrhtap/nodejs-fqmufzor:b480d69c82b98af9a06532d1092152791fb7fea3@sha256:5d717f48f61c5e2aa8d435498a1e9e389f006088bd16cb4a0b64c0ed6b1c001d
+        - image: quay.io/sjmrhtap/nodejs-fqmufzor:7c194c429cd1418e34b5b9f81cb2687e06de0082@sha256:03fdc555743f295ac5a12d3e3e1ec3411bb527c7eba1652c7d88a3a73da61109
           name: container-image
